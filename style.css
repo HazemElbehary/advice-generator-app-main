@@ -1,0 +1,92 @@
+@import url("https://fonts.google.com/specimen/Manrope");
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    background-color: hsl(217, 19%, 24%);
+    padding: 30px 30px 50px 30px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+main .NAdvice {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 28px;
+    color: rgb(211, 210, 210);
+}
+
+.lines {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lines span:first-child,
+.lines span:last-child {
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background-color: #8d8d8d;
+}
+
+.lines span:nth-child(2) {
+    margin-right: -5px;
+}
+
+.lines span:nth-child(3) {
+    margin-left: -5px;
+}
+
+.lines span:nth-child(2),
+.lines span:nth-child(3) {
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.icon:hover {
+    box-shadow: 0px 0px 10px 10px hsla(150, 100%, 66%, 0.3), 0px 0px 20px 15px hsla(150, 100%, 66%, 0.2), 0px 0px 30px 20px hsla(150, 100%, 66%, 0.1);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 4%;
+}
+
+@media (max-width:767px) {
+    main {
+        width: 95%;
+    }
+}
